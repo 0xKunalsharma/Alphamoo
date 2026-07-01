@@ -1,0 +1,157 @@
+# =============================================================================
+# Python
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# =============================================================================
+# Testing & coverage
+# =============================================================================
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# =============================================================================
+# Type checkers
+# =============================================================================
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# =============================================================================
+# IDEs / editors
+# =============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+.atom/
+.bash_history
+.cache/
+.project
+.pydevproject
+
+# =============================================================================
+# Jupyter
+# =============================================================================
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+# Don't ignore notebooks themselves — they're source files in this repo
+!notebooks/*.ipynb
+
+# =============================================================================
+# Environment & secrets
+# =============================================================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.json
+credentials.json
+# CRITICAL: never commit API tokens
+ghp_*
+gho_*
+ghu_*
+ghs_*
+ghr_*
+ak-*
+as-*
+sk-*
+Bearer
+TOKEN=*
+API_KEY=*
+
+# =============================================================================
+# Logs & databases
+# =============================================================================
+*.log
+logs/
+*.sqlite
+*.sqlite3
+*.db
+
+# =============================================================================
+# Data — large replay files should NOT be committed
+# Download from the release artifacts instead (see README)
+# =============================================================================
+data/*.vtx
+data/*.json
+data/*.jsonl
+data/*.zip
+data/*.parquet
+!data/.gitkeep
+
+# =============================================================================
+# Generated outputs (regenerable, don't commit)
+# =============================================================================
+download/
+output/
+outputs/
+runs/
+wandb/
+mlruns/
+
+# =============================================================================
+# Model weights / checkpoints (too large for git)
+# =============================================================================
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.ckpt
+*.lora
+checkpoints/
+models/
+weights/
+
+# =============================================================================
+# OS / misc
+# =============================================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
